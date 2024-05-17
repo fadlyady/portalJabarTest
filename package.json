@@ -1,0 +1,26 @@
+{
+  "name": "portalJabarTest",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fadlyady/portalJabarTest.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/fadlyady/portalJabarTest/issues"
+  },
+  "homepage": "https://github.com/fadlyady/portalJabarTest#readme",
+  "dependencies": {
+    "cypress": "^13.9.0"
+  },
+  "devDependencies": {
+    "cypress-xpath": "^2.0.1"
+  }
+}
