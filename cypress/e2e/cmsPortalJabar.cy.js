@@ -1,16 +1,11 @@
 /// <reference types="cypress" />
 
-import { loginPage } from '../support/pageObjects/login';
 import { dashboardPage } from '../support/pageObjects/dashboard';
 import { tambahLayanan } from '../support/pageObjects/tambahLayanan';
 
 let sampledata;
 
 beforeEach(() => {
-    cy.fixture('login.json').then(function(data) {
-        logindata=data;
-    })
-
     cy.fixture('dataSample.json').then(function(datatest) {
         sampledata=datatest;
     })
