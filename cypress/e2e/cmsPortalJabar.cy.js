@@ -4,7 +4,6 @@ import { loginPage } from '../support/pageObjects/login';
 import { dashboardPage } from '../support/pageObjects/dashboard';
 import { tambahLayanan } from '../support/pageObjects/tambahLayanan';
 
-let logindata;
 let sampledata;
 
 beforeEach(() => {
@@ -21,16 +20,11 @@ describe('Portal Jabar Test',() => {
 
     it('Verify menu Daftar Layanan', () => {
 
-        const login = new loginPage()
         const dashboard = new dashboardPage()
         const createLayanan = new tambahLayanan()
 
         // login step
         cy.visit('/login')
-        // login.fieldUsername().type(logindata.username)
-        // login.fieldPassword().type(logindata.password)
-        // login.btnLogin().click()
-        // cy.wait(1000)
 
         cy.loginCMS()
 
